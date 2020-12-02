@@ -1,0 +1,13 @@
+body{
+	background: linear-gradient(to right, #D8F5F8, #D8F8DF, #D8F5F8);
+}
+header{ text-align: center}
+
+div.display{
+	width: 600px;
+	border: 2px solid; 
+	border-color: black;
+	padding: 10px 10px 10px 10px
+}
+
+footer{ text-align: center}
