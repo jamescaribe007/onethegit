@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="static/css/login.css" />
+    <title>One The Git</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to "One The Git"</h1>
+      <p>Posted by James Pinelo</p>
+    </header>
+    <div align="center">
+      <div class="display">
+        <img src="static/img/original.jpg" />
+      </div>
+      <form id="authentication" method="POST" action="/logged">
+        <p>
+          Username:
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+          />
+        </p>
+        <p>
+          Password:
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+        </p>
+        <button>Submit</button>
+      </form>
+    </div>
+    {% with messages = get_flashed_messages() %} {% if messages %} {% for msg in
+    messages %}
+    <p class="rejection">{{ msg }}</p>
+    {% endfor %} {% endif%} {% endwith %}
+
+    <footer>
+      <p>Created by <a href="#">OneTheGitPowerful</a></p>
+    </footer>
+  </body>
+</html>

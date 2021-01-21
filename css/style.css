@@ -1,13 +1,29 @@
 body{
 	background: linear-gradient(to right, #D8F5F8, #D8F8DF, #D8F5F8);
+	font-family: Arial, Helvetica, sans-serif;
 }
 header{ text-align: center}
 
-div.display{
+.display{
 	width: 600px;
 	border: 2px solid; 
 	border-color: black;
-	padding: 10px 10px 10px 10px
+	padding: 10px 10px 10px 10px;
+	background-image: url("../img/textured.gif");
+}
+
+#authentication{
+	margin: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 300px;
+	height: 100px;
+	background-image: url("../img/textured.jpg");
+	/*background-color: gray;*/
+	border: 2px solid black;
+}
+p{
+	margin-top: 10px;
 }
 
 footer{ text-align: center}
